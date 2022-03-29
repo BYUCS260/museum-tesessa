@@ -16,7 +16,7 @@
       </div>
       <div class="upload" v-if="addItem">
         <h2>{{addItem.title}}</h2>
-	<h3>{{addItem.description}}</h3>
+	<p>{{addItem.description}}</p>
         <img :src="addItem.path" />
       </div>
     </div>
@@ -131,6 +131,9 @@ async getItems() {
 </script>
 
 <style scoped>
+p {
+   font-size: 10px;
+}
 /* Suggestions */
 .suggestions {
   width: 200px;
